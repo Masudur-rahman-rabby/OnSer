@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f3b52"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Register">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/backspace_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/ic_backspace_white"
+                />
+
+            <TextView
+
+                android:id="@+id/appname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="75dp"
+                android:text="OnSer"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/motto2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OnSer is The Answer"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:padding="10dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/appname2"
+                />
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:hint="Enter Fullname"
+                android:textColorHint="@color/white"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/motto2"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:textColor="@color/white"
+
+                />
+            <EditText
+                android:id="@+id/regemail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:hint="Enter Email"
+                android:textColorHint="@color/white"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/fullname"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:textColor="@color/white"
+                android:paddingRight="10dp"
+                />
+            <EditText
+                android:id="@+id/number"
+                android:inputType="number"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:hint="Enter number"
+                android:textColorHint="@color/white"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/regemail"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="10dp"
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:hint="Enter Address"
+                android:textColorHint="@color/white"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/number"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:textColor="@color/white"
+
+                />
+
+
+            <EditText
+                android:id="@+id/regpassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_round"
+                android:hint="Enter Password"
+                android:textColorHint="@color/white"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/address"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/ic_baseline_password_24"
+                />
+
+            <Button
+                android:id="@+id/register2"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/regpassword"
+                android:background="@drawable/button_round"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="130dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

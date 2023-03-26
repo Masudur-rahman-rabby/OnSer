@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0f3b52"
+    tools:context=".AdminLogin">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:id="@+id/appname"
+                android:textColor="#ffffff"
+                android:paddingTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin LogIn"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/motto"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Password To Enter"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:padding="10dp"
+                android:layout_marginBottom="70dp"
+                android:layout_below="@+id/appname"
+                />
+
+
+            <EditText
+                android:id="@+id/admin_loginpass"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter password"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_round"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="80dp"
+                android:layout_below="@+id/motto"
+                android:textColor="@color/white"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:id="@+id/admin_login_button"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_round"
+                android:text="LogIn"
+                android:textAllCaps="false"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/admin_loginpass"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

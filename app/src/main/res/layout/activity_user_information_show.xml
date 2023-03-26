@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="200dp"
+    android:orientation="vertical"
+    tools:context=".User_Information_show">
+
+    <ImageView
+
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/userinformations"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Details"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/main_col"
+        android:paddingBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/show_user_fullname"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:text=":"
+            android:textIsSelectable="true"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/show_user_email"
+            android:layout_width="wrap_content"
+            android:textSize="17dp"
+            android:text=":"
+            android:textIsSelectable="true"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Phone Number"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/show_user_number"
+            android:textSize="17dp"
+            android:textIsSelectable="true"
+            android:text=":"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Address"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/show_user_address"
+            android:textSize="17dp"
+            android:textIsSelectable="true"
+            android:text=":"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

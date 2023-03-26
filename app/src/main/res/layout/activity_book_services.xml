@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Book_services">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="70dp"
+
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/bookser"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Your Service"
+                android:layout_marginBottom="60dp"
+                android:textSize="25dp"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/serviceinfo_round"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Service Name: "
+                    android:textColor="@color/main_col"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/serviceinfo_round"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_baseline_fullname_black_24"/>
+
+                    <Spinner
+                        android:id="@+id/booking_service"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textColor="@color/main_col"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/booking_address"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/serviceinfo_round"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter address"
+                    android:drawablePadding="20dp"
+                    android:paddingRight="5dp"
+                    android:drawableLeft="@drawable/adress"
+                    android:textColor="@color/main_col"
+                    />
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="8dp"
+               android:gravity="center">
+
+               <TextView
+                   android:layout_width="120dp"
+                   android:layout_height="wrap_content"
+                   android:text="Date: "
+                   android:textColor="@color/main_col"
+                   android:textStyle="bold"
+                   android:textSize="18dp"
+                   />
+
+               <TextView
+                   android:id="@+id/service_date"
+                   android:layout_width="240dp"
+                   android:layout_height="50dp"
+                   android:background="@drawable/serviceinfo_round"
+                   android:textColor="@color/main_col"
+                   android:textSize="17dp"
+                   android:padding="10dp"
+                   android:drawableLeft="@drawable/calender"
+                   android:drawablePadding="20dp"
+                   android:hint="Choose Date"
+                   />
+
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "
+                    android:textColor="@color/main_col"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/serviceinfo_round"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="24dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/time"/>
+
+                    <Spinner
+                        android:id="@+id/booking_time"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:layout_gravity="right"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cost: "
+                    android:textColor="@color/main_col"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/serviceinfo_round"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/moving"/>
+
+                    <Spinner
+                        android:id="@+id/service_cost"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:entries="@array/price"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/service_booking_button"
+                android:layout_marginTop="40dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Book Service"
+                android:textColor="@color/black"
+                android:background="@drawable/button_round"
+                android:layout_marginBottom="60dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Add_workers">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/appname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="100dp"
+
+                android:paddingTop="80dp"
+                android:text="Add Worker Details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/worker_fullname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/serviceinfo_round"
+                android:hint="Enter Fullname"
+                android:textColorHint="@color/black"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/appname2"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/ic_baseline_fullname_black_24"
+                android:textColor="@color/black"
+
+                />
+
+            <EditText
+                android:id="@+id/number"
+                android:inputType="number"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/serviceinfo_round"
+                android:hint="Enter number"
+                android:textColorHint="@color/black"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/worker_fullname"
+                android:drawableLeft="@drawable/ic_baseline_phone_black_24"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="10dp"
+                />
+
+
+            <Spinner
+                android:id="@+id/worker_service"
+                android:paddingRight="10dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_below="@+id/number"
+                android:background="@drawable/serviceinfo_round"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter Service Info"
+                android:entries="@array/service_name"
+                />
+
+            <Button
+                android:id="@+id/add_worker"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/worker_service"
+                android:background="@drawable/button_round"
+                android:text="ADD worker details"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginBottom="130dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

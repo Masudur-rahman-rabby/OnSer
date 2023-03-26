@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UpdateProfile">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/updateuser"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile Details"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/main_col"
+                android:paddingBottom="30dp"/>
+
+            <EditText
+                android:id="@+id/update_name"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/serviceinfo_round"
+                android:hint="Enter New Name"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_fullname_black_24"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <EditText
+                android:id="@+id/update_address"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/serviceinfo_round"
+                android:hint="Enter New Address"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_mail_24"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/update_number"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/serviceinfo_round"
+                android:hint="Enter New Number"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_phone_black_24"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <Button
+                android:id="@+id/update_info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="20dp"
+                android:text="update user information"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

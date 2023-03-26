@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">OnSer</string>
+    <string name="open"></string>
+    <string name="close"></string>
+
+    <string name="Policy">OnSer is a online based application where an user can find their daily life solutions by one click. OnSer helps you to find any kind of online services that should help you in many ways. Onser is very simple application for an user.\n\nThis is a project of Md. Masudur Rahman Rabby to bring revolution on the online platform and to introduce a very user friendly approach to solve your daily life problems.\n \n
+        All services are essentially intangibles. The sale of a service does not give you an ownership of physical product.\n\nIntangibility is the basic nature of services.
+Services need to be made or provided again and again. They are generally inconsistent because different customers have different expectation.\n\n
+        The production and consumption of services is inseparable. For example, ATMs may replace the banking manager for the front office activities like cash withdrawal and cheque deposit. But, at the same time, the presence of the customer, is required and his/her interaction with the process has to be managed.\n\n
+        Services cannot be stored. Basically, you cannot have an inventory of services. There might be goods that could be stored associated to the service, but the service itself will not be stored as it is intangible.\n\n
+        The major difference between a good and a service is that a good is produced whereas a service is performed.
+    </string>
+
+    <string-array name="service_name">
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Masons</item>
+        <item>Paste Control</item>
+        <item>Security Guard</item>
+        <item>Maid</item>
+        <item>Wifi Provider</item>
+        <item>Labours</item>
+    </string-array>
+
+    <string-array name="service_price">
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Day</item>
+        <item>500 Taka/Month</item>
+        <item>500 Taka/Day</item>
+
+    </string-array>
+
+    <string-array name="price">
+        <item>500 Taka</item>
+
+    </string-array>
+
+    <string-array name="time_of_booking">
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 AM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+        <item>5:00 PM</item>
+        <item>6:00 PM</item>
+        <item>7:00 PM</item>
+        <item>8:00 PM</item>
+        <item>9:00 PM</item>
+        <item>10:00 PM</item>
+        <item>11:00 PM</item>
+    </string-array>
+</resources>

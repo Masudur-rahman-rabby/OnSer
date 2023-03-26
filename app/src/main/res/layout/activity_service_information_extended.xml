@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context=".Service_information_extended">
+
+    <TextView
+        android:id="@+id/back"
+        android:drawableLeft="@drawable/ic_backspace_black"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_gravity="clip_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ser_img"
+            android:src="@drawable/electrician"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:padding="20dp"
+            android:background="@drawable/serviceinfo_round"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:textSize="17dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/ser_name"
+                android:textSize="17dp"
+                android:text=":"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Service cost"
+                android:layout_marginLeft="70dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/ser_cost"
+                android:textSize="17dp"
+                android:text=":"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/proceed_to_book"
+            android:text="Proceed to book"
+            android:textColor="@color/black"
+            android:background="@drawable/button_round"
+            android:layout_width="180dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

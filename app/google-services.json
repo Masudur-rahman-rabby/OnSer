@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345379920567",
+    "project_id": "onser-58b88",
+    "storage_bucket": "onser-58b88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345379920567:android:062a26837f6a29ea434b32",
+        "android_client_info": {
+          "package_name": "com.example.onser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345379920567-732grqd9kci0t4j21trjdp7p106115mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2rwmoXpzlhHCr5-RQid0wMWIN1UReZjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345379920567-732grqd9kci0t4j21trjdp7p106115mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
